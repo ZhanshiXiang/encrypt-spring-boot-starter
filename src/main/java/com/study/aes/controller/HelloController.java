@@ -22,7 +22,7 @@ public class HelloController {
     public RespBean getUser() {
         User user = new User();
         user.setId((long) 99);
-        user.setUsername("javaboy");
+        user.setUsername("好吃的副本");
         System.out.println("执行加密------");
         return RespBean.ok("ok", user);
     }

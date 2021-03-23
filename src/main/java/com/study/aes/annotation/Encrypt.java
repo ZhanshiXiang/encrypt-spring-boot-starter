@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
  * @Author 真香
  * @Date 2021/3/22 17:06
  * @Version 1.0
+ *  哪个接口方法添加了 @Encrypt 注解就对哪个接口的数据加密返回，
  */
 
 @Retention(RetentionPolicy.RUNTIME)
