@@ -4,7 +4,6 @@ import com.study.aes.annotation.Decrypt;
 import com.study.aes.annotation.Encrypt;
 import com.study.aes.commons.RespBean;
 import com.study.aes.entity.User;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -33,4 +32,11 @@ public class HelloController {
         System.out.println("执行解密------");
         return RespBean.ok("ok", user);
     }
+
+    @PostMapping("/test")
+    public String test (User user) {
+
+        return "Hello world";
+    }
+
 }
